@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
 
     @Override
+    //
     public UserEntity login(LoginReq loginReq) {
         return userDAO.queryUserInfo(new UserEntity(loginReq.getUsername(), loginReq.getPassword()));
     }
